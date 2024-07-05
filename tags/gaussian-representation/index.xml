@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaussian Representation | Xia Li</title>
+    <link>https://xialipku.github.io/tags/gaussian-representation/</link>
+      <atom:link href="https://xialipku.github.io/tags/gaussian-representation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gaussian Representation</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Gaussian Representation</title>
+      <link>https://xialipku.github.io/tags/gaussian-representation/</link>
+    </image>
+    
+    <item>
+      <title>Gaussian Representation for Deformable Image Registration</title>
+      <link>https://xialipku.github.io/publication/arxiv24-gaussian-dir/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-gaussian-dir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TAMBRIDGE: Bridging Frame-Centered Tracking and 3D Gaussian Splatting for Enhanced SLAM</title>
+      <link>https://xialipku.github.io/publication/arxiv24-tam-bridge-slam/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-tam-bridge-slam/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

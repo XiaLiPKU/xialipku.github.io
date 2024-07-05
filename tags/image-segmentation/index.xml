@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Segmentation | Xia Li</title>
+    <link>https://xialipku.github.io/tags/image-segmentation/</link>
+      <atom:link href="https://xialipku.github.io/tags/image-segmentation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Image Segmentation</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2024 12:30:06 +0100</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Image Segmentation</title>
+      <link>https://xialipku.github.io/tags/image-segmentation/</link>
+    </image>
+    
+    <item>
+      <title>Towards robust referring image segmentation</title>
+      <link>https://xialipku.github.io/publication/tip24-ref-seg/</link>
+      <pubDate>Tue, 05 Mar 2024 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/tip24-ref-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Betrayed by captions: Joint caption grounding and generation for open vocabulary instance segmentation</title>
+      <link>https://xialipku.github.io/publication/iccv23-caption-seg/</link>
+      <pubDate>Mon, 02 Oct 2023 21:30:06 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/iccv23-caption-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prototypical Cross-Attention Networks for Multiple Object Tracking and Segmentation</title>
+      <link>https://xialipku.github.io/publication/neurips21-proto-track-seg/</link>
+      <pubDate>Sun, 12 Sep 2021 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/neurips21-proto-track-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards efficient scene understanding via squeeze reasoning</title>
+      <link>https://xialipku.github.io/publication/tip21-sqreason-seg/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/tip21-sqreason-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation</title>
+      <link>https://xialipku.github.io/publication/cvpr21-point-flow-seg/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/cvpr21-point-flow-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is Attention Better Than Matrix Decomposition?</title>
+      <link>https://xialipku.github.io/publication/iclr20-md-seg/</link>
+      <pubDate>Mon, 28 Sep 2020 21:30:06 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/iclr20-md-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving Semantic Segmentation via Decoupled Body and Edge Supervision</title>
+      <link>https://xialipku.github.io/publication/eccv20-decouple-seg/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/eccv20-decouple-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial Pyramid Based Graph Reasoning for Semantic Segmentation</title>
+      <link>https://xialipku.github.io/publication/cvpr20-spygr-seg/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/cvpr20-spygr-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SOGNet: Scene Overlap Graph Network for Panoptic Segmentation</title>
+      <link>https://xialipku.github.io/publication/aaai20-sognet-seg/</link>
+      <pubDate>Fri, 07 Feb 2020 09:19:08 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/aaai20-sognet-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expectation Maximization Attention Networks for Semantic Segmentation</title>
+      <link>https://xialipku.github.io/publication/iccv19-emanet-seg/</link>
+      <pubDate>Mon, 22 Jul 2019 21:30:06 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/iccv19-emanet-seg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

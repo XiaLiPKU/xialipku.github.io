@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Xia Li</title>
+    <title>Publication_types | Xia Li</title>
     <link>https://xialipku.github.io/publication_types/</link>
-    <description>Recent content in Publication_types on Xia Li</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    <lastBuildDate>Sun, 12 Sep 2021 12:30:06 +0100</lastBuildDate>
-    
-	    <atom:link href="https://xialipku.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>1</title>
-      <link>https://xialipku.github.io/publication_types/1/</link>
-      <pubDate>Sun, 12 Sep 2021 12:30:06 +0100</pubDate>
-      
-      <guid>https://xialipku.github.io/publication_types/1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2</title>
-      <link>https://xialipku.github.io/publication_types/2/</link>
-      <pubDate>Fri, 30 Jul 2021 00:00:00 +0800</pubDate>
-      
-      <guid>https://xialipku.github.io/publication_types/2/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://xialipku.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Publication_types</title>
+      <link>https://xialipku.github.io/publication_types/</link>
+    </image>
     
   </channel>
 </rss>

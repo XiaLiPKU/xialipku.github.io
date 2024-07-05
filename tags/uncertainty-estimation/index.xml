@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncertainty Estimation | Xia Li</title>
+    <link>https://xialipku.github.io/tags/uncertainty-estimation/</link>
+      <atom:link href="https://xialipku.github.io/tags/uncertainty-estimation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Uncertainty Estimation</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Uncertainty Estimation</title>
+      <link>https://xialipku.github.io/tags/uncertainty-estimation/</link>
+    </image>
+    
+    <item>
+      <title>Uncertainty-Aware Testing-Time Optimization for 3D Human Pose Estimation</title>
+      <link>https://xialipku.github.io/publication/arxiv24-uncert-tto-pose/</link>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-uncert-tto-pose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty-aware MR-based CT synthesis for robust proton therapy planning of brain tumour</title>
+      <link>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

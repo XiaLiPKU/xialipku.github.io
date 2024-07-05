@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks | Xia Li</title>
+    <link>https://xialipku.github.io/event/</link>
+      <atom:link href="https://xialipku.github.io/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 04 May 2024 09:41:00 +0200</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Talks</title>
+      <link>https://xialipku.github.io/event/</link>
+    </image>
+    
+    <item>
+      <title>ESTRO 2024 Proffered Paper</title>
+      <link>https://xialipku.github.io/event/estro24-proffered-paper/</link>
+      <pubDate>Sat, 04 May 2024 09:41:00 +0200</pubDate>
+      <guid>https://xialipku.github.io/event/estro24-proffered-paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESTRO 2023 Mini-Oral</title>
+      <link>https://xialipku.github.io/event/estro23-mini-oral/</link>
+      <pubDate>Sat, 13 May 2023 15:15:00 +0200</pubDate>
+      <guid>https://xialipku.github.io/event/estro23-mini-oral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICCV 2019 Oral</title>
+      <link>https://xialipku.github.io/event/iccv19-oral/</link>
+      <pubDate>Fri, 01 Nov 2019 13:35:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/event/iccv19-oral/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

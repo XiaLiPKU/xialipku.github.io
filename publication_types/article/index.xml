@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article | Xia Li</title>
+    <link>https://xialipku.github.io/publication_types/article/</link>
+      <atom:link href="https://xialipku.github.io/publication_types/article/index.xml" rel="self" type="application/rss+xml" />
+    <description>Article</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Article</title>
+      <link>https://xialipku.github.io/publication_types/article/</link>
+    </image>
+    
+    <item>
+      <title>CPT-Interp: Continuous sPatial and Temporal Motion Modeling for 4D Medical Image Interpolation</title>
+      <link>https://xialipku.github.io/publication/arxiv24-cpt-interp/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-cpt-interp/</guid>
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gaussian Representation for Deformable Image Registration</title>
+      <link>https://xialipku.github.io/publication/arxiv24-gaussian-dir/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-gaussian-dir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TAMBRIDGE: Bridging Frame-Centered Tracking and 3D Gaussian Splatting for Enhanced SLAM</title>
+      <link>https://xialipku.github.io/publication/arxiv24-tam-bridge-slam/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-tam-bridge-slam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond Voxel-Based Methods: Continuous Motion Modeling for Enhanced Deformable Image Registration</title>
+      <link>https://xialipku.github.io/publication/estro24-cpt-dir/</link>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/estro24-cpt-dir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous sPatial-Temporal Deformable Image Registration (CPT-DIR) for motion modelling in radiotherapy: beyond classic voxel-based methods</title>
+      <link>https://xialipku.github.io/publication/phiro24-cpt-dir/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/phiro24-cpt-dir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty-Aware Testing-Time Optimization for 3D Human Pose Estimation</title>
+      <link>https://xialipku.github.io/publication/arxiv24-uncert-tto-pose/</link>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/arxiv24-uncert-tto-pose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Unified Generation-Registration Framework for Improved MR-based CT Synthesis in Proton Therapy</title>
+      <link>https://xialipku.github.io/publication/medphys24-joint-gen-reg/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/medphys24-joint-gen-reg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

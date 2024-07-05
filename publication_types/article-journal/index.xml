@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article-Journal | Xia Li</title>
+    <link>https://xialipku.github.io/publication_types/article-journal/</link>
+      <atom:link href="https://xialipku.github.io/publication_types/article-journal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Article-Journal</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2024 12:30:06 +0100</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Article-Journal</title>
+      <link>https://xialipku.github.io/publication_types/article-journal/</link>
+    </image>
+    
+    <item>
+      <title>Towards robust referring image segmentation</title>
+      <link>https://xialipku.github.io/publication/tip24-ref-seg/</link>
+      <pubDate>Tue, 05 Mar 2024 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/tip24-ref-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards open vocabulary learning: A survey</title>
+      <link>https://xialipku.github.io/publication/tpami24-open-voc-learn/</link>
+      <pubDate>Mon, 05 Feb 2024 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/tpami24-open-voc-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty-aware MR-based CT synthesis for robust proton therapy planning of brain tumour</title>
+      <link>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization induced equilibrium networks: An explicit optimization perspective for understanding equilibrium models</title>
+      <link>https://xialipku.github.io/publication/tpami22-equil-learn/</link>
+      <pubDate>Fri, 10 Jun 2022 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/tpami22-equil-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PCLoss: Fashion landmark estimation with position constraint loss</title>
+      <link>https://xialipku.github.io/publication/pr21-fashion-pose/</link>
+      <pubDate>Fri, 01 Oct 2021 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/pr21-fashion-pose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards efficient scene understanding via squeeze reasoning</title>
+      <link>https://xialipku.github.io/publication/tip21-sqreason-seg/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/tip21-sqreason-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bi-directional Exponential Angular Triplet Loss for RGB-Infrared Person Re-Identification</title>
+      <link>https://xialipku.github.io/publication/tip20-atloss-reid/</link>
+      <pubDate>Sat, 12 Dec 2020 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/tip20-atloss-reid/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

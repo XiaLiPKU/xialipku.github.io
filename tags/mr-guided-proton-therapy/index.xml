@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mr-Guided Proton Therapy | Xia Li</title>
+    <link>https://xialipku.github.io/tags/mr-guided-proton-therapy/</link>
+      <atom:link href="https://xialipku.github.io/tags/mr-guided-proton-therapy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mr-Guided Proton Therapy</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Mr-Guided Proton Therapy</title>
+      <link>https://xialipku.github.io/tags/mr-guided-proton-therapy/</link>
+    </image>
+    
+    <item>
+      <title>Uncertainty-aware MR-based CT synthesis for robust proton therapy planning of brain tumour</title>
+      <link>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/ro23-uncert-mr2ct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Unified Generation-Registration Framework for Improved MR-based CT Synthesis in Proton Therapy</title>
+      <link>https://xialipku.github.io/publication/medphys24-joint-gen-reg/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/medphys24-joint-gen-reg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Our abstract is selected as a Mini-Oral presentation by ESTRO 2023!</title>
+      <link>https://xialipku.github.io/post/22-12-20-estro23-mini-oral/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/post/22-12-20-estro23-mini-oral/</guid>
+      <description>&lt;p&gt;From ESTRO: We are delighted to inform you that the Abstract Review Committee has selected your abstract E23-0545 titled “Uncertainty-aware MR-base CT synthesis for robust proton planning of skull-based tumour” for presentation as a Mini-Oral at ESTRO 2023&lt;/p&gt;
+&lt;p&gt;Detailed information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Track: Physics&lt;/li&gt;
+&lt;li&gt;Location: Stolz 2&lt;/li&gt;
+&lt;li&gt;Session: Image processing and treatment evaluation&lt;/li&gt;
+&lt;li&gt;Date: 13 May 2023, 15:15-16:15&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

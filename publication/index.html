@@ -1,14 +1,27 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: July 6, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system">
+  
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
 
   
+  
+
+
+
+
+
+
+
+
+
+
+
 
   
   
@@ -21,554 +34,923 @@
   
   
 
-  <meta name="author" content="Xia Li">
+  <meta name="author" content="Xia Li" />
 
   
   
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://xialipku.github.io/publication/">
-
-  
-
-
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#3f51b5">
-  
+  <link rel="alternate" hreflang="en-us" href="https://xialipku.github.io/publication/" />
 
   
   
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
+  
 
+  
+  
     
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
     
-    
+    document.addEventListener('DOMContentLoaded', function () {
       
-    
-    
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
       
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=LF6EHN32R3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'LF6EHN32R3', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Xia Li" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://xialipku.github.io/publication/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
     
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
-    
-
-    
-
-  
-
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.min.11931add725884fcc8742c523ca61145.css">
-
-  
-
-  
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-108004851-3', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
     
   
   
 
   
-  <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Xia Li">
-  
-
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
-
-  <link rel="canonical" href="https://xialipku.github.io/publication/">
-
-  
-  
-  
   
     
     
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary" />
   
-  <meta property="og:site_name" content="Xia Li">
-  <meta property="og:url" content="https://xialipku.github.io/publication/">
-  <meta property="og:title" content="Publications | Xia Li">
-  <meta property="og:description" content=""><meta property="og:image" content="https://xialipku.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://xialipku.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
   
+  <meta property="og:site_name" content="Xia Li" />
+  <meta property="og:url" content="https://xialipku.github.io/publication/" />
+  <meta property="og:title" content="Publications | Xia Li" />
+  <meta property="og:description" content="The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website." /><meta property="og:image" content="https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
+    
+      <meta property="og:updated_time" content="2024-11-09T00:00:00&#43;00:00" />
+    
   
 
   
-
-
-  
-
 
 
 
 
   <title>Publications | Xia Li</title>
 
-</head>
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+  
 
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
+  
+  
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+
+<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      baseUrl: window.hbb.pagefind.baseUrl,
+      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+      
+    
+  
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Xia Li">
+        Xia Li
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
 
     
-      <a class="navbar-brand" href="/">Xia Li</a>
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
       
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Bio</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/#news"
+        >News</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/publication"
+        >Publications</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/event"
+        >Talks</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/experience/"
+        >Experience</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/awards/"
+        >Awards</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
       </button>
       
 
-    
-    <div class="collapse navbar-collapse" id="navbar">
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
 
       
       
-      <ul class="navbar-nav mr-auto">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>News</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#experience"><span>Internships</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#accomplishments"><span>Awards</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
 
       
-      </ul>
-      <ul class="navbar-nav ml-auto">
       
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 
-  
+<div id="search" class="hidden p-3"></div>
 
 
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
 
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">Publications</h1>
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Publications</h1>
-
-  
-
-  
+  </article>
 </div>
 
 
 
-<div class="universal-wrapper">
-  <div class="row">
-    <div class="col-lg-12">
 
-      
+<div class="flex flex-col items-center">
 
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
+  
+<div class="mt-16 sm:mt-20 container max-w-3xl w-full">
+  <div class="flex flex-col space-y-3">
 
-      <div class="form-row mb-4">
-        <div class="col-auto">
-          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
-          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">Type</option>
-            
-            
-            <option value=".pubtype-1">
-              Conference paper
-            </option>
-            
-            <option value=".pubtype-2">
-              Journal article
-            </option>
-            
-          </select>
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*">Date</option>
-            
-            
-            
-            <option value=".year-2021">
-              2021
-            </option>
-            
-            <option value=".year-2020">
-              2020
-            </option>
-            
-            <option value=".year-2019">
-              2019
-            </option>
-            
-            <option value=".year-2018">
-              2018
-            </option>
-            
-            
-          </select>
-        </div>
-      </div>
 
-      <div id="container-publications">
-        
+  
+  
+  
 
-        
-          
-        
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Jihe Li*</span>, <span >
+      Fabian Zhang*</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Tianhao Zhang</span>, <span >
+      Ye Zhang</span>, <span >
+      Joachim Buhmann</span>
+  </span>
+  (2024).
+  <a href="/publication/arxiv24-gaussian-dir/" class="underline">Gaussian Representation for Deformable Image Registration</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/lei-ke/">Lei Ke</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/martin-danelljan/">Martin Danelljan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yu-wing-tai/">Yu-Wing Tai</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/chi-keung-tang/">Chi-Keung Tang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/fisher-yu/">Fisher Yu</a></span>
-
-  </span><br>
-  
-  <a href="/publication/pcan-neurips21/" itemprop="name">Prototypical Cross-Attention Networks for Multiple Object Tracking and Segmentation</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;Advances in Neural Information Processing Systems&nbsp;(<b>NeurIPS</b>),
-  &nbsp;2021.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -580,18 +962,999 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2106.11958" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2406.03394" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/arxiv24-gaussian-dir/cite.bib" target="_blank" data-filename="/publication/arxiv24-gaussian-dir/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Runzhao Yang</span>, <span >
+      Xiangtai Li</span>, <span >
+      Antony Loaxx</span>, <span >
+      Ye Zhang</span>, <span >
+      Joachim Buhamann</span>
+  </span>
+  (2024).
+  <a href="/publication/arxiv24-cpt-interp/" class="underline">CPT-Interp: Continuous sPatial and Temporal Motion Modeling for 4D Medical Image Interpolation</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2405.15385" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/arxiv24-cpt-interp/cite.bib" target="_blank" data-filename="/publication/arxiv24-cpt-interp/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Fabian Zhang</span>, <span >
+      Muheng Li</span>, <span >
+      Damien Weber</span>, <span >
+      Antony Lomax</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Ye Zhang</span>
+  </span>
+  (2024).
+  <a href="/publication/iccr24-ngp-dir/" class="underline">Neural Graphics Primitives-based Deformable Image Registration for On-the-fly Motion Extraction</a>.
+  ICCR 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2402.05568" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/iccr24-ngp-dir/cite.bib" target="_blank" data-filename="/publication/iccr24-ngp-dir/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="hb-attachment-link hb-attachment-small" href="https://iccr2024.org/schedule.html#session12" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Session</a>
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Peifeng Jiang</span>, <span >
+      Hong Liu</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Ti Wang</span>, <span >
+      Fabian Zhang</span>, <span >
+      Joachim Buhamann</span>
+  </span>
+  (2024).
+  <a href="/publication/arxiv24-tam-bridge-slam/" class="underline">TAMBRIDGE: Bridging Frame-Centered Tracking and 3D Gaussian Splatting for Enhanced SLAM</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2405.19614" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/arxiv24-tam-bridge-slam/cite.bib" target="_blank" data-filename="/publication/arxiv24-tam-bridge-slam/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Muheng Li</span>, <span >
+      Damien Weber</span>, <span >
+      Antony Lomax</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Ye Zhang</span>
+  </span>
+  (2024).
+  <a href="/publication/estro24-cpt-dir/" class="underline">Beyond Voxel-Based Methods: Continuous Motion Modeling for Enhanced Deformable Image Registration</a>.
+  ESTRO 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/estro24-cpt-dir/cite.bib" target="_blank" data-filename="/publication/estro24-cpt-dir/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="hb-attachment-link hb-attachment-small" href="https://www.estro.org/Congresses/ESTRO-2024/2462/theartofmorphing-advancementsandchallengesindeform" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Session</a>
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Muheng Li</span>, <span >
+      Antony Lomax</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Ye Zhang</span>
+  </span>
+  (2024).
+  <a href="/publication/phiro24-cpt-dir/" class="underline">Continuous sPatial-Temporal Deformable Image Registration (CPT-DIR) for motion modelling in radiotherapy: beyond classic voxel-based methods</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2405.00430" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/phiro24-cpt-dir/cite.bib" target="_blank" data-filename="/publication/phiro24-cpt-dir/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Jianzong Wu</span>, <span >
+      Xiangtai Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Henghui Ding</span>, <span >
+      Yunhai Tong</span>, <span >
+      Dacheng Tao</span>
+  </span>
+  (2024).
+  <a href="/publication/tip24-ref-seg/" class="underline">Towards robust referring image segmentation</a>.
+  TIP 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://ieeexplore.ieee.org/abstract/document/10460426" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/tip24-ref-seg/cite.bib" target="_blank" data-filename="/publication/tip24-ref-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/SysCV/pcan" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/jianzongwu/robust-ref-seg" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Ti Wang</span>, <span >
+      Mengyuan Liu</span>, <span >
+      Hong Liu</span>, <span >
+      Bin Ren</span>, <span >
+      Yingxuan You</span>, <span >
+      Wenhao Li</span>, <span >
+      Nicu Sebe</span>, <span class="font-bold">
+      Xia Li</span>
+  </span>
+  (2024).
+  <a href="/publication/arxiv24-uncert-tto-pose/" class="underline">Uncertainty-Aware Testing-Time Optimization for 3D Human Pose Estimation</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2402.02339" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/arxiv24-uncert-tto-pose/cite.bib" target="_blank" data-filename="/publication/arxiv24-uncert-tto-pose/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Jianzong Wu</span>, <span >
+      Xiangtai Li</span>, <span >
+      Shilin Xu</span>, <span >
+      Haobo Yuan</span>, <span >
+      Henghui Ding</span>, <span >
+      Yibo Yang</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Jiangning Zhang</span>, <span >
+      Yunhai Tong</span>, <span >
+      Xudong Jiang</span>, <span >
+      Bernard Ghanem</span>, <span >
+      Dacheng Tao</span>
+  </span>
+  (2024).
+  <a href="/publication/tpami24-open-voc-learn/" class="underline">Towards open vocabulary learning: A survey</a>.
+  TPAMI 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://ieeexplore.ieee.org/abstract/document/10460426" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/tpami24-open-voc-learn/cite.bib" target="_blank" data-filename="/publication/tpami24-open-voc-learn/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/jianzongwu/robust-ref-seg" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Renato Bellotti</span>, <span >
+      Gabriel Meier</span>, <span >
+      Barbara Bachtiary</span>, <span >
+      Damien Weber</span>, <span >
+      Antony Lomax</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Ye Zhang</span>
+  </span>
+  (2024).
+  <a href="/publication/ro23-uncert-mr2ct/" class="underline">Uncertainty-aware MR-based CT synthesis for robust proton therapy planning of brain tumour</a>.
+  Green Journal 2023.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://www.sciencedirect.com/science/article/pii/S0167814023093635" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/ro23-uncert-mr2ct/cite.bib" target="_blank" data-filename="/publication/ro23-uncert-mr2ct/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Renato Bellotti</span>, <span >
+      Barbara Bachtiary</span>, <span >
+      Jan Hrbacek</span>, <span >
+      Damien Weber</span>, <span >
+      Antony Lomax</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Ye Zhang</span>
+  </span>
+  (2024).
+  <a href="/publication/medphys24-joint-gen-reg/" class="underline">A Unified Generation-Registration Framework for Improved MR-based CT Synthesis in Proton Therapy</a>.
+  Arxiv 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2401.12878" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/medphys24-joint-gen-reg/cite.bib" target="_blank" data-filename="/publication/medphys24-joint-gen-reg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Xinshun Wang</span>, <span >
+      Zhongbin Fang</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Xiangtai Li</span>, <span >
+      Chen Chen</span>, <span >
+      Mengyuan Liu</span>
+  </span>
+  (2023).
+  <a href="/publication/cvpr24-icl-pose/" class="underline">Skeleton-in-context: Unified skeleton sequence modeling with in-context learning</a>.
+  CVPR 2024.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Skeleton-in-Context_Unified_Skeleton_Sequence_Modeling_with_In-Context_Learning_CVPR_2024_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/cvpr24-icl-pose/cite.bib" target="_blank" data-filename="/publication/cvpr24-icl-pose/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/fanglaosi/Skeleton-in-Context" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Zhongbin Fang</span>, <span >
+      Xiangtai Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Joachim Buhmann</span>, <span >
+      Chen Change Loy</span>, <span >
+      Mengyuan Liu</span>
+  </span>
+  (2023).
+  <a href="/publication/neurips23-icl-point/" class="underline">Explore In-Context Learning for 3D Point Cloud Understanding</a>.
+  NeurIPS 2023.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://proceedings.neurips.cc/paper_files/paper/2023/file/8407d254b5baacf69ee977aa34f0e521-Paper-Conference.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/neurips23-icl-point/cite.bib" target="_blank" data-filename="/publication/neurips23-icl-point/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/fanglaosi/Point-In-Context" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -608,58 +1971,54 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/Vt-kYDPfh10" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://youtu.be/Vt-kYDPfh10" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
   Video
 </a>
 
 
 
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2021">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Yingxuan You</span>, <span >
+      Hong Liu</span>, <span >
+      Ti Wang</span>, <span >
+      Wenhao Li</span>, <span >
+      Runwei Ding</span>, <span class="font-bold">
+      Xia Li</span>
+  </span>
+  (2023).
+  <a href="/publication/iccv23-coevo-mesh/" class="underline">Co-Evolution of Pose and Mesh for 3D Human Body Estimation from Video</a>.
+  ICCV 2023.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiangtai-li/">Xiangtai Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/ansheng-you/">Ansheng You</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/li-zhang/">Li Zhang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guangliang-cheng/">Guangliang Cheng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/kuiyuan-yang/">Kuiyuan Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yunhai-tong/">Yunhai Tong</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/sqreason-tip21/" itemprop="name">Towards efficient scene understanding via squeeze reasoning</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;IEEE Transactions on Image Processing&nbsp;(<b>TIP</b>),
-  &nbsp;2021.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -671,18 +2030,25 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2011.03308.pdf" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://openaccess.thecvf.com/content/ICCV2023/papers/You_Co-Evolution_of_Pose_and_Mesh_for_3D_Human_Body_Estimation_ICCV_2023_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/iccv23-coevo-mesh/cite.bib" target="_blank" data-filename="/publication/iccv23-coevo-mesh/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lxtGH/SFSegNets" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/kasvii/PMCE" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -698,51 +2064,47 @@
 
 
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Jianzong Wu</span>, <span >
+      Xiangtai Li</span>, <span >
+      Henghui Ding</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Guangliang Cheng</span>, <span >
+      Yunhai Tong</span>, <span >
+      Chen Change Loy</span>
+  </span>
+  (2023).
+  <a href="/publication/iccv23-caption-seg/" class="underline">Betrayed by captions: Joint caption grounding and generation for open vocabulary instance segmentation</a>.
+  ICCV 2023.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jiangmiao-pang/">Jiangmiao Pang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/linlu-qiu/">Linlu Qiu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/qi-li/">Qi Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/trevor-darrel/">Trevor Darrel</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/fisher-yu/">Fisher Yu</a></span>
-
-  </span><br>
-  
-  <a href="/publication/qdtrack-cvpr21/" itemprop="name">Quasi-dense similarity learning for multiple object tracking</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;Conference on Computer Vision and Pattern Recognition&nbsp;(<b>CVPR</b>),
-  &nbsp;2021.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -754,18 +2116,25 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Pang_Quasi-Dense_Similarity_Learning_for_Multiple_Object_Tracking_CVPR_2021_paper.pdf" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Wu_Betrayed_by_Captions_Joint_Caption_Grounding_and_Generation_for_Open_ICCV_2023_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/iccv23-caption-seg/cite.bib" target="_blank" data-filename="/publication/iccv23-caption-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/SysCV/qdtrack" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/jianzongwu/betrayed-by-captions" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -781,51 +2150,46 @@
 
 
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Xingyu Xie</span>, <span >
+      Qiuhao Wang</span>, <span >
+      Zenan Ling</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Guangcan Liu</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2022).
+  <a href="/publication/tpami22-equil-learn/" class="underline">Optimization induced equilibrium networks: An explicit optimization perspective for understanding equilibrium models</a>.
+  TPAMI 2022.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiangtai-li/">Xiangtai Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hao-he/">Hao He</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/duo-li/">Duo Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guangliang-cheng/">Guangliang Cheng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianping-shi/">Jianping Shi</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/lubin-weng/">Lubin Weng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yunhai-tong/">Yunhai Tong</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/pointflow-cvpr21/" itemprop="name">PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;IEEE/CVF Conference on Computer Vision and Pattern Recognition&nbsp;(<b>CVPR</b>),
-  &nbsp;2021.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -837,18 +2201,271 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Li_PointFlow_Flowing_Semantics_Through_Points_for_Aerial_Image_Segmentation_CVPR_2021_paper.pdf" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://ieeexplore.ieee.org/abstract/document/9793682" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/tpami22-equil-learn/cite.bib" target="_blank" data-filename="/publication/tpami22-equil-learn/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Meijia Song</span>, <span >
+      Hong Liu</span>, <span >
+      Wei Shi</span>, <span class="font-bold">
+      Xia Li</span>
+  </span>
+  (2021).
+  <a href="/publication/pr21-fashion-pose/" class="underline">PCLoss: Fashion landmark estimation with position constraint loss</a>.
+  PR 2022.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://www.sciencedirect.com/science/article/pii/S0031320321002156" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/pr21-fashion-pose/cite.bib" target="_blank" data-filename="/publication/pr21-fashion-pose/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Lei Ke</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Martin Danelljan</span>, <span >
+      Yu-Wing Tai</span>, <span >
+      Chi-Keung Tang</span>, <span >
+      Fisher Yu</span>
+  </span>
+  (2021).
+  <a href="/publication/neurips21-proto-track-seg/" class="underline">Prototypical Cross-Attention Networks for Multiple Object Tracking and Segmentation</a>.
+  NeurIPS 2021.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://proceedings.neurips.cc/paper/2021/file/093f65e080a295f8076b1c5722a46aa2-Paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/neurips21-proto-track-seg/cite.bib" target="_blank" data-filename="/publication/neurips21-proto-track-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lxtGH/PFSegNets" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/SysCV/pcan" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://youtu.be/Vt-kYDPfh10" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+  Video
+</a>
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Xiangtai Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Ansheng You</span>, <span >
+      Li Zhang</span>, <span >
+      Guangliang Cheng</span>, <span >
+      Kuiyuan Yang</span>, <span >
+      Yunhai Tong</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2021).
+  <a href="/publication/tip21-sqreason-seg/" class="underline">Towards efficient scene understanding via squeeze reasoning</a>.
+  TIP 2021.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2011.03308.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/tip21-sqreason-seg/cite.bib" target="_blank" data-filename="/publication/tip21-sqreason-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/lxtGH/SFSegNets" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -864,51 +2481,46 @@
 
 
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Jiangmiao Pang</span>, <span >
+      Linlu Qiu</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Qi Li</span>, <span >
+      Trevor Darrel</span>, <span >
+      Fisher Yu</span>
+  </span>
+  (2021).
+  <a href="/publication/cvpr21-quasi-track/" class="underline">Quasi-dense similarity learning for multiple object tracking</a>.
+  CVPR 2021.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hanrong-ye/">Hanrong Ye</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hong-liu/">Hong Liu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/fanyang-meng/">Fanyang Meng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>
-
-  </span><br>
-  
-  <a href="/publication/atloss-tip2020/" itemprop="name">Bi-directional Exponential Angular Triplet Loss for RGB-Infrared Person Re-Identification</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;Transactions on Image Processsing&nbsp;(<b>TIP</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -920,18 +2532,281 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2006.00878" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Pang_Quasi-Dense_Similarity_Learning_for_Multiple_Object_Tracking_CVPR_2021_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/cvpr21-quasi-track/cite.bib" target="_blank" data-filename="/publication/cvpr21-quasi-track/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/prismformore/expAT" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/SysCV/qdtrack" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Xiangtai Li</span>, <span >
+      Hao He</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Duo Li</span>, <span >
+      Guangliang Cheng</span>, <span >
+      Jianping Shi</span>, <span >
+      Lubin Weng</span>, <span >
+      Yunhai Tong</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2021).
+  <a href="/publication/cvpr21-point-flow-seg/" class="underline">PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation</a>.
+  CVPR 2021.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Li_PointFlow_Flowing_Semantics_Through_Points_for_Aerial_Image_Segmentation_CVPR_2021_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/cvpr21-point-flow-seg/cite.bib" target="_blank" data-filename="/publication/cvpr21-point-flow-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/lxtGH/PFSegNets" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Hanrong Ye</span>, <span >
+      Hong Liu</span>, <span >
+      Fanyang Meng</span>, <span class="font-bold">
+      Xia Li</span>
+  </span>
+  (2020).
+  <a href="/publication/tip20-atloss-reid/" class="underline">Bi-directional Exponential Angular Triplet Loss for RGB-Infrared Person Re-Identification</a>.
+  TIP 2021.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/abs/2006.00878" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/tip20-atloss-reid/cite.bib" target="_blank" data-filename="/publication/tip20-atloss-reid/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/prismformore/expAT" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Zhengyang Geng</span>, <span >
+      Menghao Guo</span>, <span >
+      Hongxu Chen</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Ke Wei</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2020).
+  <a href="/publication/iclr20-md-seg/" class="underline">Is Attention Better Than Matrix Decomposition?</a>.
+  ICLR 2020.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://openreview.net/pdf?id=1FvkSpWosOl" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/iclr20-md-seg/cite.bib" target="_blank" data-filename="/publication/iclr20-md-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/Gsunshine/Enjoy-Hamburger" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -958,56 +2833,52 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zhuanlan.zhihu.com/p/336482654" target="_blank" rel="noopener">
-    
-    Zhihu
-  </a>
+  <a class="hb-attachment-link hb-attachment-small" href="https://zhuanlan.zhihu.com/p/369769485" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Zhihu</a>
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Xiangtai Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Li Zhang</span>, <span >
+      Guangliang Cheng</span>, <span >
+      Jianping Shi</span>, <span >
+      Zhouchen Lin</span>, <span >
+      Shaohua Tan</span>, <span >
+      Yunhai Tong</span>
+  </span>
+  (2020).
+  <a href="/publication/eccv20-decouple-seg/" class="underline">Improving Semantic Segmentation via Decoupled Body and Edge Supervision</a>.
+  ECCV 2020.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhengyang-geng/">Zhengyang Geng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/menghao-guo/">Menghao Guo</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hongxu-chen/">Hongxu Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/ke-wei/">Ke Wei</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/md-iclr20/" itemprop="name">Is Attention Better Than Matrix Decomposition?</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;International Conference on Learning Representations&nbsp;(<b>ICLR</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -1019,18 +2890,25 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openreview.net/pdf?id=1FvkSpWosOl" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620426.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/eccv20-decouple-seg/cite.bib" target="_blank" data-filename="/publication/eccv20-decouple-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/Gsunshine/Enjoy-Hamburger" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/lxtGH/DecoupleSegNets" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -1046,67 +2924,46 @@
 
 
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zhuanlan.zhihu.com/p/369769485" target="_blank" rel="noopener">
-    
-    Zhihu
-  </a>
 
-</p>
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Yibo Yang</span>, <span >
+      Qijie Zhao</span>, <span >
+      Tiancheng Shen</span>, <span >
+      Zhouchen Lin</span>, <span >
+      Hong Liu</span>
+  </span>
+  (2020).
+  <a href="/publication/cvpr20-spygr-seg/" class="underline">Spatial Pyramid Based Graph Reasoning for Semantic Segmentation</a>.
+  CVPR 2020.
+  
+
+  
+  <div class="flex space-x-3">
     
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/xiangtai-li/">Xiangtai Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/li-zhang/">Li Zhang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/guangliang-cheng/">Guangliang Cheng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianping-shi/">Jianping Shi</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shaohua-tan/">Shaohua Tan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yunhai-tong/">Yunhai Tong</a></span>
-
-  </span><br>
-  
-  <a href="/publication/decouple-eccv20/" itemprop="name">Improving Semantic Segmentation via Decoupled Body and Edge Supervision</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;European Conference on Computer Vision&nbsp;(<b>ECCV</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
 
 
 
@@ -1118,351 +2975,260 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2007.10035" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/2003.10211.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/cvpr20-spygr-seg/cite.bib" target="_blank" data-filename="/publication/cvpr20-spygr-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Yibo Yang</span>, <span >
+      Hongyang Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Qijie Zhao</span>, <span >
+      Jianlong Wu</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2020).
+  <a href="/publication/aaai20-sognet-seg/" class="underline">SOGNet: Scene Overlap Graph Network for Panoptic Segmentation</a>.
+  AAAI 2020.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://cdn.aaai.org/ojs/6955/6955-13-10184-1-10-20200525.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/aaai20-sognet-seg/cite.bib" target="_blank" data-filename="/publication/aaai20-sognet-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      Yibo Yang</span>, <span >
+      Jianlong Wu</span>, <span >
+      Hongyang Li</span>, <span class="font-bold">
+      Xia Li</span>, <span >
+      Tiancheng Shen</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2020).
+  <a href="/publication/aaai20-tcs-cls/" class="underline">Dynamic System Inspired Adaptive Time Stepping Controller for Residual Networks Families</a>.
+  AAAI 2020.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="https://arxiv.org/pdf/1911.10305.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/aaai20-tcs-cls/cite.bib" target="_blank" data-filename="/publication/aaai20-tcs-cls/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Zhisheng Zhong</span>, <span >
+      Jianlong Wu</span>, <span >
+      Yibo Yang</span>, <span >
+      Zhouchen Lin</span>, <span >
+      Hong Liu</span>
+  </span>
+  (2019).
+  <a href="/publication/iccv19-emanet-seg/" class="underline">Expectation Maximization Attention Networks for Semantic Segmentation</a>.
+  ICCV 2019.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Expectation-Maximization_Attention_Networks_for_Semantic_Segmentation_ICCV_2019_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/iccv19-emanet-seg/cite.bib" target="_blank" data-filename="/publication/iccv19-emanet-seg/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lxtGH/DecoupleSegNets" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/XiaLiPKU/EMANet" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
 
 
 
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span itemprop="author" class="article-metadata li-cite-author">
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yibo-yang/">Yibo Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/qijie-zhao/">Qijie Zhao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/tiancheng-shen/">Tiancheng Shen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hong-liu/">Hong Liu</a></span>
-
-  </span><br>
-  
-  <a href="/publication/spygr-cvpr20/" itemprop="name">Spatial Pyramid Based Graph Reasoning for Semantic Segmentation</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;IEEE/CVF Conference on Computer Vision and Pattern Recognition&nbsp;(<b>CVPR</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2003.10211.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span itemprop="author" class="article-metadata li-cite-author">
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yibo-yang/">Yibo Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hongyang-li/">Hongyang Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/qijie-zhao/">Qijie Zhao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianlong-wu/">Jianlong Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/sognet-aaai20/" itemprop="name">SOGNet: Scene Overlap Graph Network for Panoptic Segmentation</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;AAAI Conference on Aritifical Intelligence&nbsp;(<b>AAAI</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/1911.07527" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/LaoYang1994/SOGNet" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://iboing.github.io/assets/pdfs/PKU_ZERO_COCO2019.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span itemprop="author" class="article-metadata li-cite-author">
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yibo-yang/">Yibo Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianlong-wu/">Jianlong Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hongyang-li/">Hongyang Li</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/tiancheng-shen/">Tiancheng Shen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/tsc-aaai20/" itemprop="name">Dynamic System Inspired Adaptive Time Stepping Controller for Residual Networks Families</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;AAAI Conference on Artificial Intelligence&nbsp;(<b>AAAI</b>),
-  &nbsp;2020.
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/1911.10305.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span itemprop="author" class="article-metadata li-cite-author">
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhisheng-zhong/">Zhisheng Zhong</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianlong-wu/">Jianlong Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yibo-yang/">Yibo Yang</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hong-liu/">Hong Liu</a></span>
-
-  </span><br>
-  
-  <a href="/publication/emanet-iccv19/" itemprop="name">Expectation Maximization Attention Networks for Semantic Segmentation</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;International Conference in Computer Vision&nbsp;(<b>ICCV</b>),
-  &nbsp;2019.
-  
-      &nbsp;(Oral 4.3%).
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Expectation-Maximization_Attention_Networks_for_Semantic_Segmentation_ICCV_2019_paper.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/XiaLiPKU/EMANet" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://xialipku.github.io/EMANet/" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://xialipku.github.io/EMANet/" target="_blank" rel="noopener">
   Project
 </a>
 
@@ -1470,14 +3236,6 @@
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://drive.google.com/file/d/1JjDWzOSavoS7LuZu_lWku245kDnwsF05/view?usp=sharing" target="_blank" rel="noopener">
-  Slides
-</a>
-
 
 
 
@@ -1494,10 +3252,9 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zhuanlan.zhihu.com/p/78018142" target="_blank" rel="noopener">
-    
-    Zhihu
-  </a>
+  <a class="hb-attachment-link hb-attachment-small" href="https://zhuanlan.zhihu.com/p/78018142" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Zhihu</a>
 
   
   
@@ -1510,10 +3267,9 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://zhuanlan.zhihu.com/p/77834369" target="_blank" rel="noopener">
-    
-    Survey
-  </a>
+  <a class="hb-attachment-link hb-attachment-small" href="https://zhuanlan.zhihu.com/p/77834369" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Survey</a>
 
   
   
@@ -1526,124 +3282,46 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://host.robots.ox.ac.uk:8080/leaderboard/displaylb_main.php?challengeid=11&amp;compid=6" target="_blank" rel="noopener">
-    
-    Leaderboard
-  </a>
+  <a class="hb-attachment-link hb-attachment-small" href="http://host.robots.ox.ac.uk:8080/leaderboard/displaylb_main.php?challengeid=11&amp;compid=6" target="_blank" rel="noopener">
+    <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+    Leaderboard</a>
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
+  
+  
 
-        
 
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
   
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <span class="article-metadata li-cite-author">
     
 
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/tiancheng-shen/">Tiancheng Shen*</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li*</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhisheng-zhong/">Zhisheng Zhong</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianlong-wu/">Jianlong Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>
-
-  </span><br>
-  
-  <a href="/publication/r2net-miccai19/" itemprop="name">R^2 Net Recurrent and Recursive Network for Sparse View CT Artifacts Removal</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;Medical Image Computing and Computer Assisted Interventions&nbsp;(<b>MICCAI</b>),
-  &nbsp;2019.
-  
-      &nbsp;(equal contribution).
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
+  <span >
+      Tiancheng Shen</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span class="font-bold">
+      Xia Li</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      Zhisheng Zhong</span>, <span >
+      Jianlong Wu</span>, <span >
+      Zhouchen Lin</span>
+  </span>
+  (2019).
+  <a href="/publication/miccai19-r2net-destreak/" class="underline">R^2 Net Recurrent and Recursive Network for Sparse View CT Artifacts Removal</a>.
+  MICCAI 2019.
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
   
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span itemprop="author" class="article-metadata li-cite-author">
+  <div class="flex space-x-3">
     
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hong-liu/">Hong Liu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hanrong-ye/">Hanrong Ye</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/wei-shi/">Wei Shi</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/mengyuan-liu/">Mengyuan Liu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/qianru-sun/">Qianru Sun</a></span>
-
-  </span><br>
-  
-  <a href="/publication/dsen-icip19/" itemprop="name">Self Refining Deep Symmetry Enhanced Network for Rain Removal</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;International Conference on Image Processing&nbsp;(<b>ICIP</b>),
-  &nbsp;2019.
-  
-  </i>
-
-  
-  <p>
 
 
 
@@ -1658,18 +3336,100 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/1811.04761.pdf" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://link.springer.com/chapter/10.1007/978-3-030-32226-7_36" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
   PDF
 </a>
 
 
 
+<a class="hb-attachment-link hb-attachment-small" href="/publication/miccai19-r2net-destreak/cite.bib" target="_blank" data-filename="/publication/miccai19-r2net-destreak/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+  
+  
+</div>
+
+  
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span class="font-bold">
+      Xia Li</span>, <span >
+      Jianlong Wu</span>, <span >
+      Zhouchen Lin</span>, <span >
+      Hong Liu</span>, <span >
+      Hongbin Zha</span>
+  </span>
+  (2018).
+  <a href="/publication/eccv18-rescan-derain/" class="underline">Recurrent Squeeze-and-Excitation Net for Single Image Deraining</a>.
+  ECCV 2018.
+  
+
+  
+  <div class="flex space-x-3">
+    
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Xia_Li_Recurrent_Squeeze-and-Excitation_Context_ECCV_2018_paper.pdf" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-small" href="/publication/eccv18-rescan-derain/cite.bib" target="_blank" data-filename="/publication/eccv18-rescan-derain/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/prismformore/SDSEN" target="_blank" rel="noopener">
+<a class="hb-attachment-link hb-attachment-small" href="https://github.com/XiaLiPKU/RESCAN" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
   Code
 </a>
 
@@ -1685,232 +3445,37 @@
 
 
 
-</p>
+
+  </div>
+  
 
   
   
 </div>
 
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
   
 
-  <span itemprop="author" class="article-metadata li-cite-author">
-    
-
-
-
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/buxia-li/u/b/"><b><u>Xia Li</u></b></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jianlong-wu/">Jianlong Wu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhouchen-lin/">Zhouchen Lin</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hong-liu/">Hong Liu</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/hongbin-zha/">Hongbin Zha</a></span>
-
-  </span><br>
-  
-  <a href="/publication/rescan-eccv18/" itemprop="name">Recurrent Squeeze-and-Excitation Net for Single Image Deraining</a>.
-  <br>
-  <i>
-  In Proceedings of&nbsp;European Conference on Computer Vision&nbsp;(<b>ECCV</b>),
-  &nbsp;2018.
-  
-  </i>
-
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Xia_Li_Recurrent_Squeeze-and-Excitation_Context_ECCV_2018_paper.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/XiaLiPKU/RESCAN" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg" target="_blank" rel="noopener">
-    
-    Report
-  </a>
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-      </div>
-
-    </div>
   </div>
 </div>
 
-      
 
-    
-    
+  
 
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
-      
+</div>
 
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
-        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
-        
-      
 
-      
-      
-    
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
 
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
-    
+  
 
-    
-    
-    
 
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
 
-    
-    
-    <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
 
-    
-    
 
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
 
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.31a6b268a1074bc800cf69e59192cb35.js"></script>
-
-    
 
 
 
@@ -1918,56 +3483,91 @@
 
 
   
-  <div class="container">
-    <footer class="site-footer">
+  
+  
+  
   
 
-  <p class="powered-by">
-    &copy; 2023 &middot; 
 
-    Powered by Xia Li @ ETHZ
-    
 
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by text-center">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
+
 </footer>
 
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
     </div>
-  </div>
-</div>
 
-</body>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
 </html>

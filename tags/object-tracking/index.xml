@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Tracking | Xia Li</title>
+    <link>https://xialipku.github.io/tags/object-tracking/</link>
+      <atom:link href="https://xialipku.github.io/tags/object-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <description>Object Tracking</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Sep 2021 12:30:06 +0100</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Object Tracking</title>
+      <link>https://xialipku.github.io/tags/object-tracking/</link>
+    </image>
+    
+    <item>
+      <title>Prototypical Cross-Attention Networks for Multiple Object Tracking and Segmentation</title>
+      <link>https://xialipku.github.io/publication/neurips21-proto-track-seg/</link>
+      <pubDate>Sun, 12 Sep 2021 12:30:06 +0100</pubDate>
+      <guid>https://xialipku.github.io/publication/neurips21-proto-track-seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quasi-dense similarity learning for multiple object tracking</title>
+      <link>https://xialipku.github.io/publication/cvpr21-quasi-track/</link>
+      <pubDate>Sat, 20 Feb 2021 21:30:06 +0800</pubDate>
+      <guid>https://xialipku.github.io/publication/cvpr21-quasi-track/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

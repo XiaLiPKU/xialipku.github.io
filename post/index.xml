@@ -1,88 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Xia Li</title>
+    <title>Blog | Xia Li</title>
     <link>https://xialipku.github.io/post/</link>
-    <description>Recent content in Posts on Xia Li</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year}</copyright>
-    
-	    <atom:link href="https://xialipku.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://xialipku.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Blog</title>
+      <link>https://xialipku.github.io/post/</link>
+    </image>
     
     <item>
-      <title>One papers was accepted by TIP!</title>
-      <link>https://xialipku.github.io/post/tip21/</link>
-      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/tip21/</guid>
-      <description></description>
+      <title>Our submission is selected as an Oral presentation by ICCR 2024!</title>
+      <link>https://xialipku.github.io/post/24-03-15-iccr24-rising-star-competition/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/post/24-03-15-iccr24-rising-star-competition/</guid>
+      <description>&lt;p&gt;From ICCR: We are pleased to inform you that your submission &amp;ldquo;Neural Graphics Primitives-based Deformable Image Registration for On-the-fly Motion Extraction&amp;rdquo;, X. Li [et al.] (sciencesconf.org:iccr2024:525322) has been accepted for an oral presentation. The detailed program with the duration of each talk along with guidelines will be posted shortly.&lt;/p&gt;
+&lt;p&gt;Detailed information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location: Auditorium Lumière&lt;/li&gt;
+&lt;li&gt;Session: Rising Stars Competition&lt;/li&gt;
+&lt;li&gt;Date: 9 July, 09:45-10:00&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Two papers was accepted by CVPR 2021!</title>
-      <link>https://xialipku.github.io/post/cvpr21/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/cvpr21/</guid>
-      <description></description>
+      <title>Our abstract is selected as a Proffered Paper by ESTRO 2024!</title>
+      <link>https://xialipku.github.io/post/23-12-18-estro24-proffered-paper/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/post/23-12-18-estro24-proffered-paper/</guid>
+      <description>&lt;p&gt;From ESTRO: We are delighted to inform you that the Abstract Review Committee has selected your abstract E24-588 titled “Beyond Voxel-Based Methods: Continuous Motion Modeling for Enhanced Deformable Image Registration” for presentation as a Proffered Paper at ESTRO 2024.&lt;/p&gt;
+&lt;p&gt;Detailed information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Track: Physics&lt;/li&gt;
+&lt;li&gt;Location: Hall 3&lt;/li&gt;
+&lt;li&gt;Session: Symposium - The art of morphing: Advancements and challenges in deformable image registration for radiotherapy&lt;/li&gt;
+&lt;li&gt;Date: 4 May 2024, 09:41-09:50&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>One paper was accepted by ICLR 2020!</title>
-      <link>https://xialipku.github.io/post/iclr20/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/iclr20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>One paper was accepted by ECCV 2020!</title>
-      <link>https://xialipku.github.io/post/eccv20/</link>
-      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/eccv20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>One paper was accepted by CVPR 2020!</title>
-      <link>https://xialipku.github.io/post/cvpr20/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/cvpr20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The website of ZERO Lab is now online!</title>
-      <link>https://xialipku.github.io/post/zerolab/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/zerolab/</guid>
-      <description>&lt;p&gt;This websites of &lt;a href=&#34;https://zero-lab-pku.github.io&#34;&gt;ZERO Lab&lt;/a&gt; and &lt;a href=&#34;http://robotics.pkusz.cn&#34;&gt;HRI Lab&lt;/a&gt; are both developed by me.
-And Now, I am maintaining &lt;a href=&#34;https://zero-lab-pku.github.io&#34;&gt;ZERO Lab&lt;/a&gt;&amp;rsquo;s one.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Two papers were accepted by AAAI 2020!</title>
-      <link>https://xialipku.github.io/post/aaai20/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/aaai20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Our PKU_ZERO team won the Innovative Award in COCO 2019!</title>
-      <link>https://xialipku.github.io/post/coco19/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://xialipku.github.io/post/coco19/</guid>
-      <description></description>
+      <title>Our abstract is selected as a Mini-Oral presentation by ESTRO 2023!</title>
+      <link>https://xialipku.github.io/post/22-12-20-estro23-mini-oral/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/post/22-12-20-estro23-mini-oral/</guid>
+      <description>&lt;p&gt;From ESTRO: We are delighted to inform you that the Abstract Review Committee has selected your abstract E23-0545 titled “Uncertainty-aware MR-base CT synthesis for robust proton planning of skull-based tumour” for presentation as a Mini-Oral at ESTRO 2023&lt;/p&gt;
+&lt;p&gt;Detailed information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Track: Physics&lt;/li&gt;
+&lt;li&gt;Location: Stolz 2&lt;/li&gt;
+&lt;li&gt;Session: Image processing and treatment evaluation&lt;/li&gt;
+&lt;li&gt;Date: 13 May 2023, 15:15-16:15&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
