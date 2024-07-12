@@ -5,12 +5,25 @@
     <link>https://xialipku.github.io/post/</link>
       <atom:link href="https://xialipku.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Blog</title>
       <link>https://xialipku.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>I am awarded the 1st place in the ICCR Rising Star Competition (Oral Presentation)!</title>
+      <link>https://xialipku.github.io/post/24-07-10-iccr24-rising-star-award/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/post/24-07-10-iccr24-rising-star-award/</guid>
+      <description>&lt;p&gt;Detailed information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location: Palais de la Bourse de Lyon&lt;/li&gt;
+&lt;li&gt;Session: Gala Dinner&lt;/li&gt;
+&lt;li&gt;Date: 10 July, 19:00-24:00&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Our submission is selected as an Oral presentation by ICCR 2024!</title>

@@ -5,12 +5,20 @@
     <link>https://xialipku.github.io/event/</link>
       <atom:link href="https://xialipku.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 04 May 2024 09:41:00 +0200</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jul 2024 09:41:00 +0200</lastBuildDate>
     <image>
       <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Talks</title>
       <link>https://xialipku.github.io/event/</link>
     </image>
+    
+    <item>
+      <title>ICCR 2024 Rising Star Competition</title>
+      <link>https://xialipku.github.io/event/iccr24-rising-star/</link>
+      <pubDate>Wed, 10 Jul 2024 09:41:00 +0200</pubDate>
+      <guid>https://xialipku.github.io/event/iccr24-rising-star/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ESTRO 2024 Proffered Paper</title>
