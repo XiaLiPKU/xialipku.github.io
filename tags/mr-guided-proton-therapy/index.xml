@@ -5,12 +5,20 @@
     <link>https://xialipku.github.io/tags/mr-guided-proton-therapy/</link>
       <atom:link href="https://xialipku.github.io/tags/mr-guided-proton-therapy/index.xml" rel="self" type="application/rss+xml" />
     <description>Mr-Guided Proton Therapy</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 08 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xialipku.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Mr-Guided Proton Therapy</title>
       <link>https://xialipku.github.io/tags/mr-guided-proton-therapy/</link>
     </image>
+    
+    <item>
+      <title>Diffusion Schrödinger Bridge Models for High-Quality MR-to-CT Synthesis for Head and Neck Proton Treatment Planning</title>
+      <link>https://xialipku.github.io/publication/iccr24-schrodinger/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://xialipku.github.io/publication/iccr24-schrodinger/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Uncertainty-aware MR-based CT synthesis for robust proton therapy planning of brain tumour</title>
